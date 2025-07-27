@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawa - Your Spiritual Companion</title>
+    <title>Nawa - Your Spiritual Companion - Legal Pages</title>
     <style>
         * {
             margin: 0;
@@ -164,76 +164,6 @@
             box-shadow: 0 12px 35px rgba(159, 232, 112, 0.4);
         }
 
-        /* Features Section */
-        .features {
-            padding: 5rem 0;
-            background: #FFFFFF;
-        }
-
-        .features h2 {
-            text-align: center;
-            margin-bottom: 4rem;
-            font-size: 3rem;
-            color: #163300;
-            font-weight: 700;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
-            padding: 2.5rem;
-            border-radius: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(159, 232, 112, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #9FE870 0%, #2F5711 100%);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(22, 51, 0, 0.1);
-        }
-
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .feature-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            filter: drop-shadow(0 4px 8px rgba(22, 51, 0, 0.1));
-        }
-
-        .feature-card h3 {
-            color: #163300;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .feature-card p {
-            color: #6A6C6A;
-            line-height: 1.7;
-        }
-
         /* Legal Pages */
         .legal-content {
             max-width: 900px;
@@ -296,6 +226,34 @@
             color: #163300;
         }
 
+        .ccpa-opt-out {
+            background: linear-gradient(135deg, #FFE5E5 0%, #FFF0F0 100%);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border-left: 5px solid #FF6B6B;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.1);
+        }
+
+        .ccpa-opt-out a {
+            color: #C92A2A;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .ccpa-opt-out a:hover {
+            text-decoration: underline;
+        }
+
+        .important-notice {
+            background: linear-gradient(135deg, #FFF3CD 0%, #FFF8E1 100%);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border-left: 5px solid #FFA000;
+            box-shadow: 0 4px 15px rgba(255, 160, 0, 0.1);
+        }
+
         /* Footer */
         footer {
             background: linear-gradient(135deg, #163300 0%, #0E0F0C 100%);
@@ -325,15 +283,6 @@
                 padding: 0 1rem;
             }
 
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .feature-card {
-                padding: 2rem;
-            }
-
             .legal-content {
                 padding: 2rem 1.5rem;
             }
@@ -359,27 +308,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-
-        /* Islamic decorative elements */
-        .islamic-decoration {
-            position: absolute;
-            opacity: 0.05;
-            font-size: 8rem;
-            color: #9FE870;
-            pointer-events: none;
-        }
-
-        .decoration-1 {
-            top: 10%;
-            right: 5%;
-            transform: rotate(15deg);
-        }
-
-        .decoration-2 {
-            bottom: 10%;
-            left: 5%;
-            transform: rotate(-15deg);
-        }
     </style>
 </head>
 <body>
@@ -398,51 +326,11 @@
         <!-- Home Page -->
         <div id="home" class="page active">
             <section class="hero">
-                <div class="islamic-decoration decoration-1">☪</div>
-                <div class="islamic-decoration decoration-2">🕌</div>
                 <div class="container">
                     <div class="hero-content page-transition loaded">
                         <h1>نحوى Nawa</h1>
                         <p>Your spiritual companion for daily Islamic practices and spiritual growth. Track your prayers, build Islamic habits, read the Quran, and strengthen your connection with Allah through authentic Islamic guidance.</p>
                         <a href="#download" class="cta-button">Download on App Store & Google Play</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="features">
-                <div class="container">
-                    <h2>Everything You Need for Your Daily Practice</h2>
-                    <div class="features-grid">
-                        <div class="feature-card page-transition">
-                            <div class="feature-icon">🕌</div>
-                            <h3>Accurate Prayer Times</h3>
-                            <p>Never miss a prayer with precise, location-based prayer timings and gentle notifications. Calculated using authentic astronomical methods.</p>
-                        </div>
-                        <div class="feature-card page-transition">
-                            <div class="feature-icon">📿</div>
-                            <h3>Digital Tasbih & Dhikr</h3>
-                            <p>Count your dhikr with our beautiful digital tasbih featuring authentic Islamic phrases, including the 99 Beautiful Names of Allah.</p>
-                        </div>
-                        <div class="feature-card page-transition">
-                            <div class="feature-icon">📖</div>
-                            <h3>Holy Quran</h3>
-                            <p>Read the complete Quran with high-quality Arabic text, translations, bookmarks, and a traditional Mushaf-style reading experience.</p>
-                        </div>
-                        <div class="feature-card page-transition">
-                            <div class="feature-icon">🎯</div>
-                            <h3>Islamic Habits Tracker</h3>
-                            <p>Build and track daily Islamic habits including prayers, dhikr, Quran reading, and more with detailed progress insights.</p>
-                        </div>
-                        <div class="feature-card page-transition">
-                            <div class="feature-icon">🏞️</div>
-                            <h3>Your Jannah Garden</h3>
-                            <p>Visualize your spiritual rewards based on authentic hadith. Track your good deeds and see your progress toward Paradise.</p>
-                        </div>
-                        <div class="feature-card page-transition">
-                            <div class="feature-icon">📊</div>
-                            <h3>Spiritual Analytics</h3>
-                            <p>Monitor your spiritual journey with detailed analytics, streak tracking, and insights to help you grow closer to Allah.</p>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -452,76 +340,158 @@
         <div id="terms" class="page">
             <div class="legal-content page-transition">
                 <div class="last-updated">
-                    <strong>Last Updated:</strong> January 2025
+                    <strong>Last Modified:</strong> July 27, 2025 | <strong>Last Updated:</strong> July 27, 2025 | <strong>Effective Date:</strong> August 1, 2025
                 </div>
                 
                 <h1>Terms of Use</h1>
                 
                 <p>بسم الله الرحمن الرحيم - In the Name of Allah, the Most Gracious, the Most Merciful</p>
                 
-                <p>Welcome to Nawa (نحوى). These Terms of Use govern your use of the Nawa mobile application and related services. By using Nawa, you agree to these terms and our commitment to providing authentic Islamic guidance.</p>
+                <p>Welcome to Nawa (نحوى). These Terms of Use ("Terms") constitute a legally binding agreement between you and Nawa Inc. ("Nawa," "we," "us," or "our") governing your use of the Nawa mobile application and related services (collectively, the "Service"). By downloading, accessing, or using Nawa, you agree to be bound by these Terms and our Privacy Policy.</p>
 
                 <h2>1. About Nawa</h2>
                 <p>Nawa is designed to support Muslims in their daily worship and spiritual growth through:</p>
                 <ul>
                     <li>Accurate prayer time calculations and notifications</li>
-                    <li>Digital tasbih with authentic Islamic dhikr</li>
+                    <li>Digital tasbih with authentic Islamic dhikr (remembrance)</li>
                     <li>Complete Quran with verified translations</li>
                     <li>Islamic habit tracking and spiritual analytics</li>
-                    <li>Community features for sharing duas and Islamic content</li>
-                    <li>Jannah visualization based on authentic hadith</li>
+                    <li>Community features for sharing duas (supplications) and Islamic content</li>
+                    <li>Jannah (Paradise) visualization based on authentic hadith</li>
                 </ul>
 
-                <h2>2. Islamic Principles</h2>
-                <p>Nawa is built upon Islamic values of authenticity (أصالة), trust (أمانة), and benefit (منفعة). All Islamic content, including Quranic verses, hadith, and prayer times, comes from verified and authentic sources.</p>
+                <h2>2. Islamic Principles & Authenticity</h2>
+                <p>Nawa is built upon Islamic values of authenticity (أصالة), trust (أمانة), and benefit (منفعة). All Islamic content, including Quranic verses, hadith, and prayer times, comes from verified and authentic sources. However, we recommend consulting qualified Islamic scholars for important religious matters, as Nawa is a tool to assist in worship, not a replacement for Islamic education.</p>
 
-                <h2>3. User Responsibilities</h2>
+                <h2>3. Eligibility & Account Registration</h2>
+                <p>You must be at least 13 years old to use Nawa. If you are under 18, you represent that you have your parent's or guardian's permission to use the Service. For users under 13, parental consent is required through our verified parental consent process, which includes email verification and additional authentication steps as required by COPPA regulations.</p>
+
+                <h2>4. User Responsibilities & Acceptable Use</h2>
                 <p>As a user of Nawa, you agree to:</p>
                 <ul>
-                    <li>Use the app in accordance with Islamic principles</li>
+                    <li>Use the app in accordance with Islamic principles and values</li>
                     <li>Respect the sanctity of Islamic content and teachings</li>
-                    <li>Maintain the confidentiality of your account</li>
-                    <li>Report any errors in Islamic content for correction</li>
-                    <li>Share knowledge and benefits with the Muslim community</li>
+                    <li>Maintain the confidentiality and security of your account credentials</li>
+                    <li>Report any errors in Islamic content for immediate correction</li>
+                    <li>Share knowledge and benefits with the Muslim community in a respectful manner</li>
+                    <li>Comply with all applicable laws and regulations</li>
+                    <li>Not use the Service for any unlawful, harmful, or fraudulent purposes</li>
+                    <li>Not attempt to interfere with the Service's security or functionality</li>
                 </ul>
 
-                <h2>4. Content Authenticity</h2>
-                <p>We strive to ensure all Islamic content is authentic and properly sourced:</p>
+                <h2>5. Content Authenticity & Prayer Times Disclaimer</h2>
+                <p>We strive to ensure all Islamic content is authentic and properly sourced from verified Islamic authorities. However:</p>
                 <ul>
-                    <li>Quranic text from the Mushaf of Madinah</li>
-                    <li>Hadith from authentic collections (Sahih Bukhari, Sahih Muslim, etc.)</li>
-                    <li>Prayer times calculated using verified astronomical methods</li>
-                    <li>Islamic content reviewed by knowledgeable scholars when possible</li>
+                    <li>Prayer times are calculated using astronomical methods and may vary slightly from local mosque timings</li>
+                    <li>We recommend consulting your local mosque for the most accurate prayer times, especially for Fajr and Maghrib</li>
+                    <li>While we verify Islamic content with knowledgeable sources, users should consult qualified Islamic scholars for important religious matters</li>
+                    <li>The Service is provided "as-is" and we disclaim all warranties regarding accuracy, though we strive for the highest standards</li>
                 </ul>
 
-                <h2>5. Prayer Times Disclaimer</h2>
-                <p>Prayer times are calculated using astronomical methods and may vary slightly from local mosque timings. We recommend consulting your local mosque for the most accurate prayer times, especially for important prayers like Fajr and Maghrib.</p>
-
-                <h2>6. Community Guidelines</h2>
-                <p>When using community features, please:</p>
+                <h2>6. Community Guidelines & Moderation</h2>
+                <p>When using community features, you must:</p>
                 <ul>
-                    <li>Share beneficial Islamic knowledge</li>
+                    <li>Share beneficial Islamic knowledge with proper attribution</li>
                     <li>Respect differences of opinion within Islamic jurisprudence</li>
-                    <li>Avoid sharing unverified Islamic information</li>
-                    <li>Maintain proper Islamic etiquette (أدب) in interactions</li>
+                    <li>Avoid sharing unverified or controversial Islamic information</li>
+                    <li>Maintain proper Islamic etiquette (أدب) in all interactions</li>
+                    <li>Report inappropriate content through our moderation system</li>
+                </ul>
+                <p>We reserve the right to moderate, remove, or restrict access to any content that violates these guidelines or Islamic principles.</p>
+
+                <h2>7. Subscription Terms & Payments</h2>
+                <p>Nawa offers premium features through subscription plans managed by RevenueCat:</p>
+                <ul>
+                    <li>Subscriptions automatically renew unless cancelled at least 24 hours before the current period ends</li>
+                    <li>You may manage or cancel your subscription through your App Store or Google Play account settings</li>
+                    <li>Pricing varies by plan and region; current pricing is displayed before purchase</li>
+                    <li>Free trial periods, if offered, will be clearly disclosed before signup</li>
+                    <li>Refunds are handled according to App Store and Google Play policies</li>
+                    <li>We do not store payment information directly; all transactions are processed by Apple or Google</li>
                 </ul>
 
-                <h2>7. Intellectual Property</h2>
-                <p>The Quran is the word of Allah and belongs to all of humanity. Hadith and Islamic teachings are part of our shared Islamic heritage. App design, features, and original content are protected by copyright.</p>
+                <h2>8. Intellectual Property Rights</h2>
+                <p>The Quran is the word of Allah and belongs to all of humanity. Hadith and Islamic teachings are part of our shared Islamic heritage. However:</p>
+                <ul>
+                    <li>The Nawa app design, features, user interface, and original content are protected by copyright and other intellectual property laws</li>
+                    <li>You may not copy, modify, distribute, or create derivative works of our proprietary content</li>
+                    <li>User-generated content remains your property, but you grant us a license to display and share it within the Service</li>
+                </ul>
 
-                <h2>8. Privacy and Data</h2>
-                <p>We handle your personal information with the Islamic principle of trust (أمانة). Please refer to our Privacy Policy for detailed information about data collection and usage.</p>
+                <h2>9. Privacy & Data Protection</h2>
+                <p>We handle your personal information with the Islamic principle of trust (أمانة) and in compliance with applicable privacy laws including GDPR, CCPA, and COPPA. Please refer to our Privacy Policy for detailed information about data collection, use, and protection.</p>
 
-                <h2>9. Limitation of Liability</h2>
-                <p>While we strive for accuracy in all Islamic content, please consult qualified Islamic scholars for important religious matters. Nawa is a tool to assist in worship, not a replacement for Islamic education.</p>
+                <h2>10. Cookies & Tracking Technologies</h2>
+                <p>We use the following cookies and tracking technologies to enhance your experience:</p>
+                <ul>
+                    <li><strong>Necessary cookies:</strong> Session management and app functionality</li>
+                    <li><strong>Analytics cookies:</strong> Firebase Analytics for app improvement</li>
+                    <li><strong>Performance cookies:</strong> Crash reporting and performance monitoring</li>
+                </ul>
+                <p>You may disable cookies through your device settings, though this may affect app functionality.</p>
 
-                <h2>10. Modifications</h2>
-                <p>We may update these terms to better serve the Muslim community. Users will be notified of any significant changes through the app.</p>
+                <h2>11. Limitation of Liability & Disclaimers</h2>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+                <ul>
+                    <li>THE SERVICE IS PROVIDED "AS-IS" WITHOUT WARRANTIES OF ANY KIND</li>
+                    <li>WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</li>
+                    <li>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SERVICE IN THE LAST 12 MONTHS</li>
+                    <li>WE ARE NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                    <li>SOME JURISDICTIONS DO NOT ALLOW LIMITATION OF LIABILITY, SO THESE LIMITATIONS MAY NOT APPLY TO YOU</li>
+                </ul>
 
-                <h2>11. Contact and Support</h2>
-                <p>For questions, corrections, or support, please contact us through the app or our official channels. We welcome feedback to improve Nawa for the benefit of all Muslims.</p>
+                <div class="important-notice">
+                    <strong>Important Religious Disclaimer:</strong> While we strive for accuracy in all Islamic content, this app is a tool to assist in worship and spiritual growth. For important religious matters, rulings, or scholarly interpretations, please consult qualified Islamic scholars and your local mosque.
+                </div>
 
-                <p><em>May Allah accept our efforts and make Nawa a source of benefit for the Muslim Ummah worldwide. آمين</em></p>
+                <h2>12. Data Breach Notification</h2>
+                <p>In the event of a data breach that may affect your personal information, we will:</p>
+                <ul>
+                    <li>Notify affected users within 72 hours of discovering the breach</li>
+                    <li>Report to relevant supervisory authorities as required by law</li>
+                    <li>Provide clear information about what data was affected and steps being taken</li>
+                    <li>Offer guidance on protective measures you can take</li>
+                </ul>
+
+                <h2>13. Modifications to Terms</h2>
+                <p>We may update these Terms to better serve the Muslim community and comply with legal requirements. We will provide at least 30 days' notice of material changes through:</p>
+                <ul>
+                    <li>In-app notifications</li>
+                    <li>Email to registered users</li>
+                    <li>Updated "Last Modified" date on this page</li>
+                </ul>
+                <p>Continued use of the Service after changes become effective constitutes acceptance of the new Terms.</p>
+
+                <h2>14. Dispute Resolution & Governing Law</h2>
+                <p>Any dispute arising out of or relating to these Terms or the Service will be resolved as follows:</p>
+                <ul>
+                    <li><strong>Governing Law:</strong> These Terms are governed by the laws of France, without regard to conflict-of-law principles</li>
+                    <li><strong>Arbitration:</strong> Disputes will be resolved by binding arbitration under the rules of the American Arbitration Association</li>
+                    <li><strong>Class Action Waiver:</strong> You and Nawa waive any right to participate in class-action lawsuits or class-wide arbitration</li>
+                    <li><strong>Jurisdiction:</strong> Any disputes not subject to arbitration will be resolved in the courts of France</li>
+                    <li><strong>30-Day Notice:</strong> Before initiating arbitration, parties must provide 30 days' written notice of the dispute</li>
+                </ul>
+
+                <h2>15. Termination</h2>
+                <p>Either party may terminate this agreement at any time. Upon termination:</p>
+                <ul>
+                    <li>Your access to the Service will be discontinued</li>
+                    <li>Data will be handled according to our Privacy Policy retention schedules</li>
+                    <li>Sections relating to intellectual property, liability limitations, and dispute resolution will survive termination</li>
+                </ul>
+
+                <h2>16. Contact Information & Support</h2>
+                <p>For questions, corrections, or support:</p>
+                <ul>
+                    <li><strong>General Support:</strong> Use the in-app support feature</li>
+                    <li><strong>All Inquiries:</strong> nawa.app.contact@gmail.com</li>
+                    <li><strong>Privacy Requests:</strong> nawa.app.contact@gmail.com (Subject: Privacy Request)</li>
+                    <li><strong>Islamic Content Review:</strong> nawa.app.contact@gmail.com (Subject: Islamic Content)</li>
+                    <li><strong>Technical Issues:</strong> nawa.app.contact@gmail.com (Subject: Technical Support)</li>
+                    <li><strong>Mailing Address:</strong> Nawa, Noisy-le-Sec 93130, France</li>
+                </ul>
+
+                <p><em>May Allah accept our efforts and make Nawa a source of benefit for the Muslim Ummah worldwide. آمين (Ameen)</em></p>
             </div>
         </div>
 
@@ -529,132 +499,315 @@
         <div id="privacy" class="page">
             <div class="legal-content page-transition">
                 <div class="last-updated">
-                    <strong>Last Updated:</strong> January 2025
+                    <strong>Last Modified:</strong> July 27, 2025 | <strong>Last Updated:</strong> July 27, 2025 | <strong>Effective Date:</strong> August 1, 2025
                 </div>
                 
                 <h1>Privacy Policy</h1>
                 
                 <p>بسم الله الرحمن الرحيم - In the Name of Allah, the Most Gracious, the Most Merciful</p>
                 
-                <p>At Nawa, we handle your personal information with the Islamic principle of trust (أمانة). This Privacy Policy explains how we collect, use, and protect your data in accordance with both Islamic values and modern privacy standards.</p>
+                <p>At Nawa, we handle your personal information with the Islamic principle of trust (أمانة). This Privacy Policy explains how Nawa Inc. ("we," "us," or "our") collects, uses, protects, and shares your personal information in connection with the Nawa mobile application and related services (the "Service") in accordance with both Islamic values and applicable privacy laws including the EU General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and Children's Online Privacy Protection Act (COPPA).</p>
+
+                <div class="ccpa-opt-out">
+                    <strong>California Residents:</strong> You have the right to opt out of the "sale" or "sharing" of your personal information. <a href="javascript:void(0)" onclick="alert('To opt out, please email us at nawa.app.contact@gmail.com with subject: Do Not Sell My Personal Information')">Click here to opt out</a> or contact us at nawa.app.contact@gmail.com with subject "Do Not Sell My Personal Information". We do not discriminate against users who exercise their privacy rights.
+                </div>
 
                 <h2>1. Information We Collect</h2>
                 
-                <h3>Personal Information</h3>
+                <h3>1.1 Personal Information You Provide</h3>
+                <p><strong>Lawful Basis (GDPR Article 6):</strong> Performance of contract and legitimate interests</p>
                 <ul>
-                    <li><strong>Account Details:</strong> Email, username, and profile preferences</li>
-                    <li><strong>Location Data:</strong> Your location for accurate prayer times (only with your permission)</li>
-                    <li><strong>Spiritual Data:</strong> Prayer tracking, habit completion, Quran reading progress, and dhikr counts</li>
-                    <li><strong>Community Content:</strong> Shared duas, Islamic content, and community interactions</li>
+                    <li><strong>Account Information:</strong> Email address, username, display name, and profile preferences</li>
+                    <li><strong>Authentication Data:</strong> Password (encrypted), Firebase authentication tokens</li>
+                    <li><strong>Communication Data:</strong> Support requests, feedback, and correspondence with us</li>
+                    <li><strong>Community Content:</strong> Shared duas, comments, and Islamic content you post</li>
                 </ul>
 
-                <h3>Automatically Collected Data</h3>
+                <h3>1.2 Spiritual & Usage Data</h3>
+                <p><strong>Lawful Basis (GDPR Article 6):</strong> Performance of contract and legitimate interests</p>
                 <ul>
-                    <li>Device information for app optimization</li>
-                    <li>Usage analytics to improve Islamic features</li>
-                    <li>Crash reports to ensure app stability</li>
+                    <li><strong>Prayer Tracking:</strong> Prayer completion times, missed prayers, and prayer streak data</li>
+                    <li><strong>Habit Data:</strong> Islamic habit completion, Quran reading progress, dhikr counts</li>
+                    <li><strong>App Usage:</strong> Features used, session duration, app interaction patterns</li>
+                    <li><strong>Preferences:</strong> Prayer reminder settings, madhab preferences, language settings</li>
+                </ul>
+
+                <h3>1.3 Location Data</h3>
+                <p><strong>Lawful Basis (GDPR Article 6):</strong> Consent</p>
+                <ul>
+                    <li><strong>Precise Location:</strong> GPS coordinates for accurate prayer times (only with explicit consent)</li>
+                    <li><strong>Approximate Location:</strong> City/region for general prayer time calculations</li>
+                    <li><strong>Mosque Locations:</strong> Nearby mosque data when using our mosque finder feature</li>
+                </ul>
+
+                <h3>1.4 Automatically Collected Data</h3>
+                <p><strong>Lawful Basis (GDPR Article 6):</strong> Legitimate interests</p>
+                <ul>
+                    <li><strong>Device Information:</strong> Device model, operating system, app version, device ID</li>
+                    <li><strong>Technical Data:</strong> IP address, browser type, time zone, crash logs</li>
+                    <li><strong>Analytics Data:</strong> App performance metrics, feature usage statistics (via Firebase Analytics)</li>
                 </ul>
 
                 <h2>2. How We Use Your Information</h2>
-                <p>We use your information to:</p>
+                <p>We process your personal information for the following purposes, each with its corresponding lawful basis under GDPR Article 6:</p>
+
+                <h3>2.1 Service Delivery (Performance of Contract)</h3>
                 <ul>
-                    <li>Provide accurate prayer times for your location</li>
+                    <li>Provide accurate prayer times based on your location</li>
                     <li>Send prayer reminders and Islamic notifications</li>
-                    <li>Track your spiritual habits and progress</li>
-                    <li>Synchronize your data across devices</li>
-                    <li>Improve app features for the Muslim community</li>
-                    <li>Provide customer support and Islamic guidance</li>
-                    <li>Share community duas and beneficial content</li>
+                    <li>Synchronize your spiritual data across devices</li>
+                    <li>Process subscription payments through RevenueCat</li>
+                    <li>Maintain your account and provide customer support</li>
                 </ul>
 
-                <h2>3. Islamic Principles in Data Handling</h2>
-                <p>Our approach to your data is guided by Islamic values:</p>
+                <h3>2.2 Service Improvement (Legitimate Interests)</h3>
                 <ul>
-                    <li><strong>أمانة (Trust):</strong> We treat your data as a trust and protect it accordingly</li>
-                    <li><strong>خصوصية (Privacy):</strong> Your personal spiritual journey remains private</li>
-                    <li><strong>صدق (Truthfulness):</strong> We are transparent about our data practices</li>
-                    <li><strong>منفعة (Benefit):</strong> Data usage focuses on benefiting your spiritual growth</li>
+                    <li>Analyze app usage to improve features and user experience</li>
+                    <li>Monitor app performance and fix technical issues</li>
+                    <li>Develop new Islamic features based on community needs</li>
+                    <li>Ensure app security and prevent fraud</li>
                 </ul>
 
-                <h2>4. Data Security</h2>
-                <p>We implement comprehensive security measures:</p>
+                <h3>2.3 Community Features (Consent & Legitimate Interests)</h3>
                 <ul>
-                    <li>End-to-end encryption for sensitive spiritual data</li>
-                    <li>Secure cloud infrastructure with regular security audits</li>
-                    <li>Limited access to personal data by authorized personnel only</li>
-                    <li>Regular backups to prevent data loss</li>
-                    <li>Compliance with international data protection standards</li>
+                    <li>Enable sharing of duas and beneficial Islamic content</li>
+                    <li>Facilitate community discussions and spiritual support</li>
+                    <li>Moderate content to maintain Islamic values and community standards</li>
                 </ul>
 
-                <h2>5. Data Sharing</h2>
-                <p>We do not sell your personal information. Limited sharing occurs only for:</p>
+                <h2>3. Legal Bases for Data Processing (GDPR Compliance)</h2>
+                <p>Under GDPR Article 6, we process your personal data based on the following lawful bases:</p>
                 <ul>
-                    <li><strong>Service Providers:</strong> Trusted partners who help operate the app (Firebase, prayer time services)</li>
-                    <li><strong>Community Features:</strong> Shared duas and Islamic content (with your permission)</li>
-                    <li><strong>Legal Requirements:</strong> When required by law or to protect user safety</li>
-                    <li><strong>Islamic Scholars:</strong> Anonymous data for Islamic content verification (when applicable)</li>
+                    <li><strong>Performance of Contract (Article 6(1)(b)):</strong> Account creation, prayer reminders, subscription management</li>
+                    <li><strong>Legitimate Interests (Article 6(1)(f)):</strong> App analytics, security, fraud prevention, service improvement</li>
+                    <li><strong>Consent (Article 6(1)(a)):</strong> Location data for prayer times, community content sharing, marketing communications</li>
+                    <li><strong>Legal Obligation (Article 6(1)(c)):</strong> Compliance with applicable laws and regulations</li>
                 </ul>
 
-                <h2>6. Your Rights</h2>
-                <p>You have the right to:</p>
+                <h2>4. Data Sharing & Third-Party Services</h2>
+                <p>We do not sell your personal information. We share data only in the following limited circumstances:</p>
+
+                <h3>4.1 Service Providers</h3>
                 <ul>
-                    <li><strong>Access:</strong> Request all your personal and spiritual data</li>
-                    <li><strong>Correct:</strong> Update your profile and preferences</li>
-                    <li><strong>Delete:</strong> Remove your account and associated data</li>
-                    <li><strong>Export:</strong> Download your spiritual tracking data</li>
-                    <li><strong>Control:</strong> Manage notification settings and data sharing preferences</li>
+                    <li><strong>Firebase (Google):</strong> Authentication, analytics, crash reporting, cloud storage</li>
+                    <li><strong>RevenueCat:</strong> Subscription management and payment processing</li>
+                    <li><strong>Prayer Time Services:</strong> Calculation APIs for accurate prayer times</li>
+                    <li><strong>Cloud Infrastructure:</strong> AWS/Google Cloud for secure data storage and processing</li>
                 </ul>
 
-                <h2>7. Location Services for Prayer Times</h2>
-                <p>Location data is used solely for:</p>
+                <h3>4.2 Legal Requirements</h3>
                 <ul>
-                    <li>Calculating accurate prayer times for your area</li>
-                    <li>Finding nearby mosques and Islamic centers</li>
-                    <li>Adjusting for local religious observances</li>
+                    <li>When required by law, court order, or government regulation</li>
+                    <li>To protect the safety and security of our users and the public</li>
+                    <li>To investigate and prevent fraudulent or illegal activities</li>
                 </ul>
-                <p>Location services can be disabled, though this may affect prayer time accuracy.</p>
 
-                <h2>8. Children's Privacy</h2>
+                <h3>4.3 Business Transfers</h3>
+                <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred to the new entity, subject to the same privacy protections.</p>
+
+                <h2>5. International Data Transfers & Safeguards</h2>
+                <p>Your data may be processed in countries outside your region to serve the global Muslim community. We ensure adequate protection through:</p>
+                <ul>
+                    <li><strong>Adequacy Decisions:</strong> Transfers to countries with adequate data protection as determined by the European Commission</li>
+                    <li><strong>Standard Contractual Clauses (SCCs):</strong> EU-approved contracts ensuring GDPR-level protection</li>
+                    <li><strong>Encryption:</strong> All data transfers are encrypted in transit and at rest</li>
+                    <li><strong>Data Minimization:</strong> Only necessary data is transferred for specific purposes</li>
+                </ul>
+
+                <h2>6. Your Privacy Rights</h2>
+                
+                <h3>6.1 GDPR Rights (EU Residents)</h3>
+                <ul>
+                    <li><strong>Access (Article 15):</strong> Request a copy of all personal data we hold about you</li>
+                    <li><strong>Rectification (Article 16):</strong> Correct inaccurate or incomplete data</li>
+                    <li><strong>Erasure (Article 17):</strong> Request deletion of your personal data ("right to be forgotten")</li>
+                    <li><strong>Restriction (Article 18):</strong> Limit how we process your data</li>
+                    <li><strong>Portability (Article 20):</strong> Receive your data in a machine-readable format</li>
+                    <li><strong>Objection (Article 21):</strong> Object to processing based on legitimate interests</li>
+                    <li><strong>Withdraw Consent:</strong> Withdraw consent for consent-based processing at any time</li>
+                    <li><strong>Lodge Complaints:</strong> File complaints with your national data protection authority</li>
+                </ul>
+
+                <h3>6.2 CCPA Rights (California Residents)</h3>
+                <ul>
+                    <li><strong>Right to Know:</strong> What personal information we collect, use, and share</li>
+                    <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                    <li><strong>Right to Opt-Out:</strong> Opt out of the "sale" or "sharing" of personal information</li>
+                    <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of exercising privacy rights</li>
+                    <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+                </ul>
+
+                <h3>6.3 How to Exercise Your Rights</h3>
+                <p>To exercise any of these rights, contact us at nawa.app.contact@gmail.com with "Privacy Request" in the subject line. We will respond within:</p>
+                <ul>
+                    <li><strong>GDPR requests:</strong> 1 month (extendable to 3 months for complex requests)</li>
+                    <li><strong>CCPA requests:</strong> 45 days (extendable to 90 days)</li>
+                    <li><strong>Identity verification:</strong> May be required for security purposes</li>
+                </ul>
+
+                <h2>7. Children's Privacy (COPPA Compliance)</h2>
                 <p>Nawa supports Islamic education for all ages. For children under 13:</p>
+
+                <h3>7.1 Parental Consent Process</h3>
                 <ul>
-                    <li>Parental consent is required for account creation</li>
-                    <li>Additional privacy protections are applied</li>
-                    <li>Islamic educational content is age-appropriate</li>
-                    <li>Community features have enhanced moderation</li>
+                    <li><strong>Age Screening:</strong> Users must provide their birth date during registration</li>
+                    <li><strong>Verification Method:</strong> Parental consent obtained through email verification plus phone confirmation</li>
+                    <li><strong>Consent Documentation:</strong> We maintain records of parental consent as required by COPPA</li>
+                    <li><strong>Account Creation:</strong> Child accounts require verified parental permission before activation</li>
                 </ul>
 
-                <h2>9. Data Retention</h2>
-                <p>We retain your data for:</p>
+                <h3>7.2 Enhanced Protections for Children</h3>
                 <ul>
-                    <li>Active accounts: As long as you use Nawa</li>
-                    <li>Inactive accounts: Up to 3 years for recovery purposes</li>
-                    <li>Spiritual progress data: Retained for continuity of your Islamic journey</li>
-                    <li>Community content: Beneficial duas and content may be preserved for the Ummah</li>
+                    <li><strong>Limited Data Collection:</strong> Only information necessary for Islamic education and app functionality</li>
+                    <li><strong>No Behavioral Advertising:</strong> Children's data is never used for advertising purposes</li>
+                    <li><strong>Enhanced Moderation:</strong> Community features have additional oversight for child safety</li>
+                    <li><strong>Parental Access:</strong> Parents can review, modify, or delete their child's information at any time</li>
                 </ul>
 
-                <h2>10. International Transfers</h2>
-                <p>Your data may be processed in different countries to serve the global Muslim community. We ensure all transfers comply with privacy laws and Islamic principles of data protection.</p>
-
-                <h2>11. Updates to This Policy</h2>
-                <p>We may update this policy to better serve the Muslim community. Significant changes will be communicated through:</p>
+                <h3>7.3 Parental Rights</h3>
+                <p>Parents of children under 13 have the right to:</p>
                 <ul>
-                    <li>In-app notifications</li>
-                    <li>Email to registered users</li>
-                    <li>Updated "Last Modified" date</li>
+                    <li>Review their child's personal information</li>
+                    <li>Request deletion of their child's account and data</li>
+                    <li>Refuse further collection of their child's information</li>
+                    <li>Receive notifications about our data practices</li>
                 </ul>
 
-                <h2>12. Contact Us</h2>
-                <p>For privacy questions or Islamic content concerns:</p>
+                <h2>8. Data Security Measures</h2>
+                <p>We implement comprehensive security measures following the Islamic principle of trust (أمانة):</p>
+
+                <h3>8.1 Technical Safeguards</h3>
                 <ul>
-                    <li>Use the in-app support feature</li>
-                    <li>Visit our website contact page</li>
-                    <li>Email: privacy@nawa-app.com</li>
-                    <li>Islamic Content Review: scholars@nawa-app.com</li>
+                    <li><strong>Encryption:</strong> AES-256 encryption for data at rest, TLS 1.3 for data in transit</li>
+                    <li><strong>Access Controls:</strong> Multi-factor authentication and role-based access for staff</li>
+                    <li><strong>Regular Audits:</strong> Quarterly security assessments and penetration testing</li>
+                    <li><strong>Secure Infrastructure:</strong> SOC 2 certified cloud providers with 99.9% uptime</li>
                 </ul>
 
-                <p><strong>Commitment to the Ummah:</strong> We are committed to serving the global Muslim community with integrity, authenticity, and respect for both Islamic values and modern privacy standards.</p>
+                <h3>8.2 Organizational Safeguards</h3>
+                <ul>
+                    <li><strong>Staff Training:</strong> Regular privacy and security training for all employees</li>
+                    <li><strong>Data Minimization:</strong> We collect only what's necessary for app functionality</li>
+                    <li><strong>Incident Response:</strong> 24/7 monitoring and documented breach response procedures</li>
+                    <li><strong>Vendor Oversight:</strong> All third-party providers undergo security assessments</li>
+                </ul>
 
-                <p><em>بارك الله فيكم - May Allah bless you for choosing Nawa as your spiritual companion.</em></p>
+                <h2>9. Data Retention & Deletion</h2>
+                <p>We retain your data according to the following schedules:</p>
+
+                <h3>9.1 Active Accounts</h3>
+                <ul>
+                    <li><strong>Account Data:</strong> Retained while your account is active</li>
+                    <li><strong>Spiritual Progress:</strong> Retained for continuity of your Islamic journey</li>
+                    <li><strong>Community Content:</strong> Beneficial duas and content may be preserved for the Ummah</li>
+                    <li><strong>Analytics Data:</strong> Aggregated and anonymized after 26 months</li>
+                </ul>
+
+                <h3>9.2 Inactive Accounts</h3>
+                <ul>
+                    <li><strong>Account Recovery:</strong> Data retained for 3 years after last login</li>
+                    <li><strong>Legal Compliance:</strong> Some data may be retained longer as required by law</li>
+                    <li><strong>Backup Systems:</strong> Data in backups deleted according to our backup retention policy</li>
+                </ul>
+
+                <h3>9.3 Deletion Process</h3>
+                <p>When you request account deletion:</p>
+                <ul>
+                    <li>Personal data is deleted within 30 days of verification</li>
+                    <li>Some anonymized data may remain for service improvement</li>
+                    <li>Community contributions may be anonymized rather than deleted to preserve Islamic knowledge</li>
+                    <li>Legal requirements may necessitate retaining certain data</li>
+                </ul>
+
+                <h2>10. Data Breach Notification Procedures</h2>
+                <p>In the event of a data breach affecting your personal information:</p>
+
+                <h3>10.1 GDPR Compliance (EU Residents)</h3>
+                <ul>
+                    <li><strong>Supervisory Authority:</strong> Notification within 72 hours of discovery</li>
+                    <li><strong>User Notification:</strong> Direct notification within 72 hours if high risk to rights and freedoms</li>
+                    <li><strong>Documentation:</strong> Detailed breach records maintained as required</li>
+                </ul>
+
+                <h3>10.2 CCPA Compliance (California Residents)</h3>
+                <ul>
+                    <li><strong>Disclosure:</strong> Notification of unauthorized access to unencrypted personal information</li>
+                    <li><strong>Timeline:</strong> Notification as soon as reasonably possible</li>
+                    <li><strong>Content:</strong> Information about affected data and protective measures</li>
+                </ul>
+
+                <h3>10.3 Communication Methods</h3>
+                <ul>
+                    <li>In-app notifications for immediate alerts</li>
+                    <li>Email notifications to all affected users</li>
+                    <li>Website updates with detailed information</li>
+                    <li>Guidance on protective measures users can take</li>
+                </ul>
+
+                <h2>11. Cookies & Tracking Technologies</h2>
+                <p>We use the following cookies and tracking technologies:</p>
+
+                <h3>11.1 Types of Cookies</h3>
+                <ul>
+                    <li><strong>Necessary Cookies:</strong> Essential for app functionality, session management, and security</li>
+                    <li><strong>Analytics Cookies:</strong> Firebase Analytics for understanding app usage and improving features</li>
+                    <li><strong>Performance Cookies:</strong> Crash reporting and performance monitoring to ensure app stability</li>
+                    <li><strong>Preference Cookies:</strong> Remember your settings and preferences across sessions</li>
+                </ul>
+
+                <h3>11.2 Cookie Management</h3>
+                <ul>
+                    <li><strong>Consent:</strong> We obtain consent for non-essential cookies</li>
+                    <li><strong>Control:</strong> You can disable cookies through your device settings</li>
+                    <li><strong>Impact:</strong> Disabling cookies may affect app functionality</li>
+                    <li><strong>Duration:</strong> Cookies expire according to their specific purposes</li>
+                </ul>
+
+                <h2>12. Updates to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy to reflect changes in our practices or applicable laws. We will:</p>
+                <ul>
+                    <li><strong>Provide Notice:</strong> At least 30 days' advance notice for material changes</li>
+                    <li><strong>Notification Methods:</strong> In-app notifications, email, and updated "Last Modified" date</li>
+                    <li><strong>Continued Use:</strong> Continued use after changes indicates acceptance</li>
+                    <li><strong>Withdrawal Right:</strong> You may delete your account if you disagree with changes</li>
+                </ul>
+
+                <h2>13. Supervisory Authorities & Complaints</h2>
+                <p>You have the right to lodge complaints about our data processing activities:</p>
+
+                <h3>13.1 EU Residents</h3>
+                <ul>
+                    <li><strong>Lead Supervisory Authority:</strong> Commission Nationale de l'Informatique et des Libertés (CNIL), France</li>
+                    <li><strong>Local Authority:</strong> You may also contact your national data protection authority</li>
+                    <li><strong>Contact Information:</strong> Available on each authority's official website</li>
+                </ul>
+
+                <h3>13.2 US Residents</h3>
+                <ul>
+                    <li><strong>California:</strong> California Privacy Protection Agency (privacy.ca.gov)</li>
+                    <li><strong>Federal:</strong> Federal Trade Commission (consumer.ftc.gov)</li>
+                    <li><strong>COPPA:</strong> FTC's COPPA enforcement for children's privacy issues</li>
+                </ul>
+
+                <h2>14. Contact Information & Data Protection Officer</h2>
+                <p>For all privacy-related inquiries:</p>
+                <ul>
+                    <li><strong>Data Protection Officer:</strong> Nawa Privacy Team</li>
+                    <li><strong>All Privacy Inquiries:</strong> nawa.app.contact@gmail.com (Subject: Privacy)</li>
+                    <li><strong>COPPA Inquiries:</strong> nawa.app.contact@gmail.com (Subject: Children's Privacy)</li>
+                    <li><strong>CCPA Requests:</strong> nawa.app.contact@gmail.com (Subject: CCPA Request)</li>
+                    <li><strong>GDPR Requests:</strong> nawa.app.contact@gmail.com (Subject: GDPR Request)</li>
+                    <li><strong>EU Representative:</strong> For EU data protection matters, contact nawa.app.contact@gmail.com (Subject: EU Data Protection)</li>
+                    <li><strong>Mailing Address:</strong> Nawa, Noisy-le-Sec 93130, France</li>
+                </ul>
+
+                <div class="important-notice">
+                    <strong>Commitment to the Ummah:</strong> We are committed to serving the global Muslim community with integrity, authenticity, and respect for both Islamic values and modern privacy standards. Your trust is our أمانة (amanah).
+                </div>
+
+                <p><strong>بارك الله فيكم - May Allah bless you for choosing Nawa as your spiritual companion.</strong></p>
+
+                <p><em>This Privacy Policy demonstrates our commitment to transparency and compliance with GDPR, CCPA, COPPA, and other applicable privacy laws while maintaining the Islamic principles that guide our service.</em></p>
             </div>
         </div>
     </main>
