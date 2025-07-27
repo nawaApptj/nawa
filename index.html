@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawa - Your Spiritual Companion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+        }
+
+        .page {
+            display: none;
+            min-height: calc(100vh - 80px);
+            padding: 2rem 0;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Home Page */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Legal Pages */
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .legal-content h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .legal-content h2 {
+            color: #34495e;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .legal-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #27ae60;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Nawa</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('terms')">Terms of Use</a></li>
+                <li><a href="#" onclick="showPage('privacy')">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <div class="container">
+                    <h1>Nawa</h1>
+                    <p>Your spiritual companion for daily Islamic practices and spiritual growth. Track your prayers, build Islamic habits, and strengthen your connection with Allah.</p>
+                    <a href="#" class="cta-button">Download Now</a>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <h2>Everything You Need for Your Daily Practice</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🕌</div>
+                            <h3>Prayer Times</h3>
+                            <p>Never miss a prayer with accurate, location-based prayer timings and gentle reminders.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📿</div>
+                            <h3>Digital Tasbih</h3>
+                            <p>Count your dhikr and tasbeeh with our beautiful digital counter featuring authentic Islamic phrases.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📖</div>
+                            <h3>Quran Reading</h3>
+                            <p>Read the Holy Quran with translations, bookmarks, and continue reading features.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Islamic Habits</h3>
+                            <p>Build and track daily Islamic habits consistently with progress tracking and insights.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏞️</div>
+                            <h3>Your Jannah</h3>
+                            <p>Visualize your rewards in Paradise based on authentic Islamic teachings and your good deeds.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Activity Tracking</h3>
+                            <p>Monitor your good and bad deeds for spiritual growth and self-accountability.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Terms of Use Page -->
+        <div id="terms" class="page">
+            <div class="legal-content">
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> January 2025
+                </div>
+                
+                <h1>Terms of Use</h1>
+                
+                <p>Welcome to Nawa. These Terms of Use ("Terms") govern your use of the Nawa mobile application and related services (collectively, the "Service") operated by us.</p>
+
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing and using Nawa, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+
+                <h2>2. Description of Service</h2>
+                <p>Nawa is a mobile application designed to help Muslims practice their faith through:</p>
+                <ul>
+                    <li>Prayer time notifications and reminders</li>
+                    <li>Digital tasbih and dhikr counter</li>
+                    <li>Quran reading with translations</li>
+                    <li>Islamic habit tracking</li>
+                    <li>Spiritual progress monitoring</li>
+                    <li>Community features for sharing duas</li>
+                </ul>
+
+                <h2>3. User Accounts</h2>
+                <p>To access certain features of Nawa, you may be required to create an account. You are responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account information</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Providing accurate and complete information</li>
+                    <li>Updating your information as necessary</li>
+                </ul>
+
+                <h2>4. Acceptable Use</h2>
+                <p>You agree to use Nawa only for lawful purposes and in accordance with Islamic principles. You agree not to:</p>
+                <ul>
+                    <li>Use the service for any unlawful purpose</li>
+                    <li>Share inappropriate or offensive content</li>
+                    <li>Attempt to interfere with the service's functionality</li>
+                    <li>Reverse engineer or attempt to extract source code</li>
+                    <li>Use the service to spread misinformation about Islam</li>
+                </ul>
+
+                <h2>5. Content and Intellectual Property</h2>
+                <p>All content provided through Nawa, including Quranic verses, prayer times, and Islamic content, is for personal, non-commercial use only. The Quranic text and translations are provided from authentic sources for educational and spiritual purposes.</p>
+
+                <h2>6. Privacy</h2>
+                <p>Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the Service, to understand our practices.</p>
+
+                <h2>7. Disclaimer of Warranties</h2>
+                <p>Nawa is provided "as is" without any warranties, expressed or implied. We do not warrant that the service will be uninterrupted or error-free. Prayer times are calculated using astronomical methods and may vary slightly from local mosque timings.</p>
+
+                <h2>8. Limitation of Liability</h2>
+                <p>In no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of Nawa.</p>
+
+                <h2>9. Termination</h2>
+                <p>We may terminate or suspend your account and access to the service immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.</p>
+
+                <h2>10. Changes to Terms</h2>
+                <p>We reserve the right to modify these terms at any time. We will notify users of any material changes through the app or via email.</p>
+
+                <h2>11. Contact Information</h2>
+                <p>If you have any questions about these Terms, please contact us through the app's support feature or via our official communication channels.</p>
+
+                <p><em>May Allah accept our efforts and bless this application to serve the Muslim community worldwide.</em></p>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Page -->
+        <div id="privacy" class="page">
+            <div class="legal-content">
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> January 2025
+                </div>
+                
+                <h1>Privacy Policy</h1>
+                
+                <p>At Nawa, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our mobile application.</p>
+
+                <h2>1. Information We Collect</h2>
+                
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, username, and profile preferences</li>
+                    <li><strong>Location Data:</strong> Your location to provide accurate prayer times (only when permission is granted)</li>
+                    <li><strong>Usage Data:</strong> App usage statistics, prayer tracking, habit completion, and spiritual progress</li>
+                </ul>
+
+                <h3>Automatically Collected Information</h3>
+                <ul>
+                    <li>Device information (model, operating system, app version)</li>
+                    <li>Log data (app crashes, performance metrics)</li>
+                    <li>Analytics data (feature usage, session duration)</li>
+                </ul>
+
+                <h2>2. How We Use Your Information</h2>
+                <p>We use your information to:</p>
+                <ul>
+                    <li>Provide accurate prayer times based on your location</li>
+                    <li>Send prayer reminders and notifications</li>
+                    <li>Track your spiritual habits and progress</li>
+                    <li>Sync your data across devices</li>
+                    <li>Improve app functionality and user experience</li>
+                    <li>Provide customer support</li>
+                    <li>Send important updates about the app</li>
+                </ul>
+
+                <h2>3. Data Storage and Security</h2>
+                <p>We implement appropriate security measures to protect your personal information:</p>
+                <ul>
+                    <li>Data is encrypted both in transit and at rest</li>
+                    <li>We use secure cloud infrastructure (Firebase/Google Cloud)</li>
+                    <li>Access to personal data is restricted to authorized personnel only</li>
+                    <li>Regular security audits and updates are performed</li>
+                </ul>
+
+                <h2>4. Data Sharing</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With trusted third-party services that help us operate the app (Firebase, analytics services)</li>
+                    <li><strong>Legal Requirements:</strong> When required by law or to protect our rights and safety</li>
+                    <li><strong>Business Transfers:</strong> In the event of a merger or acquisition (users will be notified)</li>
+                </ul>
+
+                <h2>5. Your Rights and Choices</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of your personal data</li>
+                    <li><strong>Update:</strong> Correct or update your personal information</li>
+                    <li><strong>Delete:</strong> Request deletion of your account and associated data</li>
+                    <li><strong>Opt-out:</strong> Disable notifications and data collection features</li>
+                    <li><strong>Export:</strong> Request an export of your spiritual tracking data</li>
+                </ul>
+
+                <h2>6. Location Services</h2>
+                <p>Nawa uses location services to:</p>
+                <ul>
+                    <li>Calculate accurate prayer times for your area</li>
+                    <li>Provide location-based Islamic content</li>
+                </ul>
+                <p>You can disable location services at any time through your device settings, though this may affect the accuracy of prayer times.</p>
+
+                <h2>7. Children's Privacy</h2>
+                <p>Nawa is designed for users of all ages, including children learning about Islam. We do not knowingly collect personal information from children under 13 without parental consent. If you are a parent and believe your child has provided us with personal information, please contact us.</p>
+
+                <h2>8. International Data Transfers</h2>
+                <p>Your information may be processed and stored in countries other than your own. We ensure that any international transfers comply with applicable data protection laws and provide adequate protection for your personal information.</p>
+
+                <h2>9. Data Retention</h2>
+                <p>We retain your personal information for as long as necessary to:</p>
+                <ul>
+                    <li>Provide you with our services</li>
+                    <li>Comply with legal obligations</li>
+                    <li>Resolve disputes and enforce agreements</li>
+                </ul>
+                <p>You can request deletion of your data at any time through the app settings.</p>
+
+                <h2>10. Cookies and Analytics</h2>
+                <p>We use analytics services to understand how users interact with Nawa. This helps us improve the app and provide better features. All analytics data is anonymized and cannot be used to identify individual users.</p>
+
+                <h2>11. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting a notice in the app</li>
+                    <li>Sending an email notification</li>
+                    <li>Updating the "Last Updated" date at the top of this policy</li>
+                </ul>
+
+                <h2>12. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy or how we handle your personal information, please contact us through:</p>
+                <ul>
+                    <li>The app's support feature</li>
+                    <li>Our official website</li>
+                    <li>Email: privacy@nawa-app.com</li>
+                </ul>
+
+                <p><em>We are committed to handling your personal information with the highest level of care and in accordance with Islamic principles of trust (amanah) and responsibility.</em></p>
+
+                <p><strong>Barakallahu feekum</strong> - May Allah bless you for choosing Nawa as your spiritual companion.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nawa. All rights reserved. | Developed with ❤️ for the Muslim community</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update URL without page reload
+            window.history.pushState({}, '', `#${pageId}`);
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                showPage(hash);
+            } else {
+                showPage('home');
+            }
+        });
+
+        // Handle initial page load
+        window.addEventListener('load', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                showPage(hash);
+            } else {
+                showPage('home');
+            }
+        });
+    </script>
+</body>
+</html>
